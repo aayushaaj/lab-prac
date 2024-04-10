@@ -2,19 +2,15 @@
 
 void linkedlist::addtohead(int data){
     node *newnode =new node(data, HEAD);
-    if(isempty)
-        {
-
-        }
-    else
-        { 
-
-        }
+    
+    
     
 }
 void linkedlist::add(node *pred,int data)
-{
-    node *newnode;
+{   node *newnode;
+    newnode->info=data;
+    newnode->next=pred->next;
+    pred->next=newnode;
 }
 void addtotail(int data);
 

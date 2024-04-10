@@ -1,5 +1,6 @@
+#pragma once
 class node
-{
+{   public:
     int info;
     node *next;
     node(){}
