@@ -28,3 +28,10 @@ class linkedlist
 
     void head(int &data);
 };
+void linkedlist::addtohead(int data){
+    node *newnode =new node (data,head);
+    if(this->isempty)
+    {
+        
+    }
+}
