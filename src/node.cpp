@@ -85,7 +85,7 @@ bool linkedlist::removeFromHead(int &data)
         NodeToDelete=HEAD;           // Set the node to delete to the head       
         HEAD=NodeToDelete->next;     // Update the head to the next node        
         delete NodeToDelete;         // Delete the old head
-        // If the list is now empty, also update the tail to null
+     // If the list is now empty, also update the tail to null
         if(HEAD==nullptr)
         {
             TAIL=nullptr;
@@ -104,31 +104,31 @@ bool linkedlist::removeFromHead(int &data)
 bool linkedlist::removeFromTail(int &data)
 {
 
-    node *NodeToDelete;     // Create pointers to the node to delete and its predecessor
+    node *NodeToDelete;             // Create pointers to the node to delete and its predecessor
     node *pred;
    
-    if(!isEmpty())           // If the list is not empty
+    if(!isEmpty())                  // If the list is not empty
     {
         
-        NodeToDelete=TAIL;  // Set the node to delete to the tail
+        NodeToDelete=TAIL;          // Set the node to delete to the tail
         // If the list only contains one node
         if(HEAD==TAIL)
         {
            
-            HEAD=TAIL=nullptr;   // Update the head and tail to null
+            HEAD=TAIL=nullptr;       // Update the head and tail to null
         }
         else
         {            
-            pred=HEAD;  // Find the predecessor of the tail
+            pred=HEAD;              // Find the predecessor of the tail
             while(pred->next!=TAIL)
             {
                 pred=pred->next;
             }         
-            TAIL=pred;   // Update the tail to its predecessor
-            pred->next=nullptr;             // Set the next pointer of the new tail to null
+            TAIL=pred;              // Update the tail to its predecessor
+            pred->next=nullptr;     // Set the next pointer of the new tail to null
         } 
         delete NodeToDelete;        // Delete the old tail        
-        return true;        // Return true indicating the node was successfully removed
+        return true;                // Return true indicating the node was successfully removed
     }
     else
     {
@@ -153,7 +153,7 @@ bool linkedlist::remove(int data)
         
         removeFromHead(tempData);   // Remove the head
        
-        return true;         // Return true indicating the node was successfully removed
+        return true;                // Return true indicating the node was successfully removed
     }
 
     // Create pointers to the current node and its predecessor
@@ -174,8 +174,8 @@ bool linkedlist::remove(int data)
                 TAIL = prev;
             }
             
-            delete temp;        // Delete the current node
-            return true;      // Return true indicating the node was successfully removed  
+            delete temp;                // Delete the current node
+            return true;                // Return true indicating the node was successfully removed  
         }
         // Move to the next node
         prev = temp;
@@ -186,12 +186,6 @@ bool linkedlist::remove(int data)
     return false;
 }
 
-// // Get the data from the head of the list
-// void linkedlist::head(int &data)
-// {
-//     // This function is currently empty and needs to be implemented
-// }
-
 void linkedlist::print() {
     node* temp = HEAD;
     while (temp != nullptr) {
@@ -200,6 +194,11 @@ void linkedlist::print() {
     }
     std::cout << "\n";
 }
+// // Get the data from the head of the list
+// void linkedlist::head(int &data)
+// {
+//     // This function is currently empty and needs to be implemented
+// }
 // linkedlist::~linkedlist()
 // {
 //     while(!isEmpty())
