@@ -7,6 +7,7 @@ class node
         node(int d):info(d),next(nullptr){}
         node(int d, node * next):info(d),next(next){}
 };
+
 class linkedlist
 {
     private:
@@ -27,5 +28,7 @@ class linkedlist
 
         bool isEmpty();
 
-        void head(int &data);
+        //void head(int &data);
+
+        void print();
 };

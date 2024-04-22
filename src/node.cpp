@@ -1,4 +1,5 @@
 #include "../include/linkedlist.h"
+#include <iostream>
 
 // Constructor for the linked list
 linkedlist::linkedlist()
@@ -185,13 +186,20 @@ bool linkedlist::remove(int data)
     return false;
 }
 
-// Get the data from the head of the list
-void linkedlist::head(int &data)
-{
-    // This function is currently empty and needs to be implemented
+// // Get the data from the head of the list
+// void linkedlist::head(int &data)
+// {
+//     // This function is currently empty and needs to be implemented
+// }
+
+void linkedlist::print() {
+    node* temp = HEAD;
+    while (temp != nullptr) {
+        std::cout << temp->info << " ";
+        temp = temp->next;
+    }
+    std::cout << "\n";
 }
-
-
 // linkedlist::~linkedlist()
 // {
 //     while(!isEmpty())
