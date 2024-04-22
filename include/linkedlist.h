@@ -18,14 +18,14 @@ class linkedlist
         ~linkedlist();
         
         void add(node *pred,int data);
-        void addtohead(int data);
-        void addtotail(int data);
+        void addToHead(int data);
+        void addToTail(int data);
 
         bool remove(int data);
         bool removeFromHead(int &data);
         bool removeFromTail(int &data);
 
-        bool isempty();
+        bool isEmpty();
 
         void head(int &data);
 };
