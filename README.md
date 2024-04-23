@@ -18,12 +18,9 @@ The class provides several functions for manipulating the list:
 This implementation provides understanding of the basics and working with linked lists. It can be extended to include more complex operations, such as sorting the list, reversing the list and more.
 
 ## Files included
-- `main.cpp`: 
-      - This is the driver program that demonstrates the usage of the linked list.
-- `linkedlist.h`: 
-      - This header file contains the declaration of the `LinkedList` and '`node` class and their member functions.
-- `linkedlist.cpp`: 
-      - This file contains the implementation of the `LinkedList` class and its member functions.
+- `main.cpp`: This is the driver program that demonstrates the usage of the linked list.
+- `linkedlist.h`: This header file contains the declaration of the `LinkedList` and '`node` class and their member functions.
+- `linkedlist.cpp`: This file contains the implementation of the `LinkedList` class and its member functions.
 
 ## Usage
 
