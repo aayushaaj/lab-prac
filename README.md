@@ -36,18 +36,18 @@ g++ -o main main.cpp linkedlist.cpp
 
 ## Functions used and their fucntionalities:
 
-__addToHead(int data):__<br>
-      Adds a new node with the given data to the head of the list. <br>
-__addToTail(int data):__<br>
-      Adds a new node with the given data to the tail of the list.  <br>
-__removeFromHead(int &data):__<br>
-      Removes the node at the head of the list and returns its data. <br>
-__removeFromTail():__ <br>
-      Removes the node at the tail of the list. <br>
-__isEmpty():__ <br> 
-      Returns true if the list is empty and false otherwise. <br>
-__print():__ <br>
-      Prints out the nodes in the list. <br>
+- __addToHead(int data):__<br>
+      - Adds a new node with the given data to the head of the list. <br>
+- __addToTail(int data):__<br>
+      - Adds a new node with the given data to the tail of the list.  <br>
+- __removeFromHead(int &data):__<br>
+      - Removes the node at the head of the list and returns its data. <br>
+- __removeFromTail():__ <br>
+      - Removes the node at the tail of the list. <br>
+- __isEmpty():__ <br> 
+      - Returns true if the list is empty and false otherwise. <br>
+- __print():__ <br>
+      - Prints out the nodes in the list. <br>
 
 ##  Project Structure
 
