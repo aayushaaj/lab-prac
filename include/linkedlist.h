@@ -16,7 +16,6 @@ class linkedlist
 
     public:
         linkedlist();
-        ~linkedlist();
         
         void add(node *pred,int data);
         void addToHead(int data);
@@ -28,7 +27,7 @@ class linkedlist
 
         bool isEmpty();
 
-        //void head(int &data);
-
         void print();
+
+         ~linkedlist();
 };
