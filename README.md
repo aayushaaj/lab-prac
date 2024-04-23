@@ -28,25 +28,25 @@ To run the program,the source files needs to be compiled first and the resulting
 
 In terminal, (inside the directory containing cpp files)
 
-# To compile the program
+### To compile the program
 g++ -o main main.cpp linkedlist.cpp
 
-# To Run the program
+### To Run the program
 ./main
 
 ## Functions used and their fucntionalities:
 
-- __addToHead(int data):__<br>
+- #### addToHead(int data):<br>
       - Adds a new node with the given data to the head of the list. <br>
-- __addToTail(int data):__<br>
+- #### addToTail(int data):<br>
       - Adds a new node with the given data to the tail of the list.  <br>
-- __removeFromHead(int &data):__<br>
+- #### removeFromHead(int &data):<br>
       - Removes the node at the head of the list and returns its data. <br>
-- __removeFromTail():__ <br>
+- #### removeFromTail(): <br>
       - Removes the node at the tail of the list. <br>
-- __isEmpty():__ <br> 
+- #### isEmpty():<br> 
       - Returns true if the list is empty and false otherwise. <br>
-- __print():__ <br>
+- #### print(): <br>
       - Prints out the nodes in the list. <br>
 
 ##  Project Structure
