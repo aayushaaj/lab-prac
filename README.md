@@ -28,10 +28,10 @@ To run the program,the source files needs to be compiled first and the resulting
 
 In terminal, (inside the directory containing cpp files)
 
-### To compile the program
+#### To compile the program
 g++ -o main main.cpp linkedlist.cpp
 
-### To Run the program
+#### To Run the program
 ./main
 
 ## Functions used and their fucntionalities:
