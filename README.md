@@ -37,17 +37,17 @@ In terminal, (inside the directory containing cpp files)
 ## Functions used and their fucntionalities:
 
 - #### addToHead(int data):<br>
-      - Adds a new node with the given data to the head of the list. <br>
+      - Adds a new node with the given data to the head of the list. 
 - #### addToTail(int data):<br>
-      - Adds a new node with the given data to the tail of the list.  <br>
+      - Adds a new node with the given data to the tail of the list.  
 - #### removeFromHead(int &data):<br>
-      - Removes the node at the head of the list and returns its data. <br>
+      - Removes the node at the head of the list and returns its data. 
 - #### removeFromTail(): <br>
-      - Removes the node at the tail of the list. <br>
+      - Removes the node at the tail of the list. 
 - #### isEmpty():<br> 
-      - Returns true if the list is empty and false otherwise. <br>
+      - Returns true if the list is empty and false otherwise. 
 - #### print(): <br>
-      - Prints out the nodes in the list. <br>
+      - Prints out the nodes in the list. 
 
 ##  Project Structure
 
