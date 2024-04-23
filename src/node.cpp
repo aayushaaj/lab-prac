@@ -194,15 +194,3 @@ void linkedlist::print() {
     }
     std::cout << "\n";
 }
-// // Get the data from the head of the list
-// void linkedlist::head(int &data)
-// {
-//     // This function is currently empty and needs to be implemented
-// }
-// linkedlist::~linkedlist()
-// {
-//     while(!isEmpty())
-//     {
-//         removeFromHead();
-//     }
-// }
