@@ -17,6 +17,7 @@ The class provides several functions for manipulating the list:
 - `search` searches for a node with the given data in the list. Returns true if such a node is found and false otherwise.
 - `retrieve`: Searches for a node with the specified data. If found, sets outputPtr to this node and returns true. If not found, returns false.
 - `remove`: Searches for a node with the specified data and removes it if found. Updates the head or tail pointer if necessary. Returns true if the node was successfully removed, false otherwise.
+- `traverse`: Prints the info data of each node in the list, starting from the head.
 
 
 
@@ -45,8 +46,8 @@ In terminal, (inside the directory containing cpp files)
       - Adds a new node with the given data to the head of the list. 
 - #### addToTail(int data):<br>
       - Adds a new node with the given data to the tail of the list.  
-- #### removeFromHead(int &data):<br>
-      - Removes the node at the head of the list and returns its data. 
+- #### removeFromHead():<br>
+      - Removes the node at the head of the list . 
 - #### removeFromTail(): <br>
       - Removes the node at the tail of the list. 
 - #### isEmpty():<br> 
@@ -59,6 +60,9 @@ In terminal, (inside the directory containing cpp files)
       - Searches for a node with the given data in the list. If such a node is found, it sets outputPtr to point to this node and returns true. If the node is not found, it returns false. This function allows us to not only check if a node with the given data exists in the list, but also access the node directly through the outputPtr.
 - #### remove(int data):<br>
       - Searches for a node with the given data in the list and removes it if found. If the node is in the head of the list, it updates the head pointer. If the node is in the tail of the list, it updates the tail pointer. If the node is in the middle of the list, it updates the next pointer of the previous node to point to the next node, effectively removing the current node from the list. The function returns true if the node was found and removed, and false otherwise. This function allows you to remove a node with a specific data value from the list.
+- #### traverse():<br>
+      - This function iterates over each node in the linked list starting from the head. For each node, it prints the info data to the console. The traversal continues until it has visited all nodes, i.e., until the node pointer p becomes nullptr. This function is useful for viewing all the elements in the linked list.
+
 
 ##  Project Structure
 
