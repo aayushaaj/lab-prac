@@ -182,6 +182,19 @@ bool linkedlist::remove(int data)
 return false;
 }
 
+bool linkedList::retrieve(int data, node** outputPtr) {
+    node* p = HEAD;
+    while (p != nullptr && p->info != data) {
+        p = p->next;
+    }
+    if (p == nullptr) {
+        return false;
+    } else {
+        *outputPtr = p;
+        return true;
+    }
+}
+
 //Destructor for the linked list
 linkedlist::~linkedlist() {
     node* current = HEAD;
