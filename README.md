@@ -55,9 +55,9 @@ In terminal, (inside the directory containing cpp files)
       - Prints out the nodes in the list. 
 - #### search(int data):<br>
       - Searches for a node with the given data in the list. Returns true if such a node is found and false otherwise. 
-- ### retrieve(int data, node** outputPtr):<br>
+- #### retrieve(int data, node** outputPtr):<br>
       - Searches for a node with the given data in the list. If such a node is found, it sets outputPtr to point to this node and returns true. If the node is not found, it returns false. This function allows us to not only check if a node with the given data exists in the list, but also access the node directly through the outputPtr.
-- ### remove(int data):<br>
+- #### remove(int data):<br>
       - Searches for a node with the given data in the list and removes it if found. If the node is in the head of the list, it updates the head pointer. If the node is in the tail of the list, it updates the tail pointer. If the node is in the middle of the list, it updates the next pointer of the previous node to point to the next node, effectively removing the current node from the list. The function returns true if the node was found and removed, and false otherwise. This function allows you to remove a node with a specific data value from the list.
 
 ##  Project Structure
