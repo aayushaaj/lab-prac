@@ -34,5 +34,21 @@ int main()
         std::cout<<"After removing from tail\n";
         list.print();
 
+        node* myNode;
+        bool found = list.retrieve(1, &myNode);
+        if (found) {
+            std::cout << "Node found: " << myNode->info << std::endl;
+        } 
+        else {
+            std::cout << "Node not found.\n";
+        }
+
+        list.search(10) ? std::cout << "Node found\n" : std::cout << "Node not found\n";
+
+        list.remove(3);
+        std::cout<<"Updated Linked List\n";
+        std::cout<<"After removing 3:\n";
+        list.print();
+
         return 0;
 }
