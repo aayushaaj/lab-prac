@@ -17,17 +17,18 @@ class linkedlist
     public:
         linkedlist();
         
-        void add(node *pred,int data);
+        void add(int data,node *pred);
         void addToHead(int data);
         void addToTail(int data);
 
         bool remove(int data);
-        bool removeFromHead(int &data);
-        bool removeFromTail(int &data);
+        bool removeFromHead();
+        bool removeFromTail();
 
         bool retrieve(int data, node **outputPtr);
         bool search(int data);
-        
+        void traverse();
+
         bool isEmpty();
 
         void print();
