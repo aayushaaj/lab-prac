@@ -67,7 +67,7 @@ void linkedlist::add(node *pred,int data)
     }
     else
     {
-        node *newnode= new node;  // Creates a new node
+        node *newnode= new node;        // Creates a new node
         newnode->info=data;             // Sets the data of the new node
         newnode->next=pred->next;       // Sets the next pointer of the new node to the next pointer of the specified node
         pred->next=newnode;             // Updates the next pointer of the specified node to the new node
@@ -75,7 +75,7 @@ void linkedlist::add(node *pred,int data)
 }
 
 // Removes the head of the linked list
-bool linkedlist::removeFromHead(int &data)
+bool linkedlist::removeFromHead()
 {   
     
     node *NodeToDelete; // Creating a pointer to the node to delete
@@ -102,7 +102,7 @@ bool linkedlist::removeFromHead(int &data)
 }
 
 // Removes the tail of the linked list
-bool linkedlist::removeFromTail(int &data)
+bool linkedlist::removeFromTail()
 {
 
     node *NodeToDelete;                     // Creates pointers to the node to delete and its predecessor
@@ -148,7 +148,7 @@ bool linkedlist::remove(int data)
 
     if(HEAD->info == data) {
         int tempData;
-        removeFromHead(tempData);       // Removes the head
+        removeFromHead();       // Removes the head
         return true;                    // Returns true indicating the node was successfully removed
     }
 
@@ -203,6 +203,21 @@ bool linkedlist::search(int data) {
     return p != nullptr;
 }
 
+void linkedlist::add(int data, node* predecessor) {
+    node* newNode = new node;
+    newNode->info = data;
+    newNode->next = predecessor->next;
+    predecessor->next = newNode;
+}
+
+void linkedlist::traverse() {
+    node* p = HEAD;
+    while (p != nullptr) {
+        std::cout << p->info << std::endl;
+        p = p->next;
+    }
+}
+
 //Destructor for the linked list
 linkedlist::~linkedlist() {
     node* current = HEAD;
@@ -218,6 +233,7 @@ linkedlist::~linkedlist() {
 // Prints out the nodes in the linked list
 void linkedlist::print() {
     node* temp = HEAD;
+    std::cout << "Linked List: "<<std::endl;
     while (temp != nullptr) 
     {
         std::cout << temp->info << " ";
