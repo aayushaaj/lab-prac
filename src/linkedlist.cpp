@@ -182,7 +182,7 @@ bool linkedlist::remove(int data)
 return false;
 }
 
-bool linkedList::retrieve(int data, node** outputPtr) {
+bool linkedlist::retrieve(int data, node** outputPtr) {
     node* p = HEAD;
     while (p != nullptr && p->info != data) {
         p = p->next;
@@ -193,6 +193,14 @@ bool linkedList::retrieve(int data, node** outputPtr) {
         *outputPtr = p;
         return true;
     }
+}
+
+bool linkedlist::search(int data) {
+    node* p = HEAD;
+    while (p != nullptr && p->info != data) {
+        p = p->next;
+    }
+    return p != nullptr;
 }
 
 //Destructor for the linked list

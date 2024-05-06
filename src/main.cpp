@@ -25,19 +25,17 @@ int main()
         list.print();
         int data;
         list.removeFromHead(data);
-        std::cout<<"Updated Linked List\n";
-        std::cout<<"After removing from head\n";
+        std::cout<<"Updated Linked List (removed from head) \n";
         list.print();
 
         list.removeFromTail(data);
-        std::cout<<"Updated Linked List\n";
-        std::cout<<"After removing from tail\n";
+        std::cout<<"Updated Linked List (removed from tail) \n";
         list.print();
 
         node* myNode;
         bool found = list.retrieve(1, &myNode);
         if (found) {
-            std::cout << "Node found: " << myNode->info << std::endl;
+            std::cout << "Node found: " << myNode->info<<std::endl;
         } 
         else {
             std::cout << "Node not found.\n";
