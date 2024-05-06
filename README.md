@@ -14,6 +14,11 @@ The class provides several functions for manipulating the list:
 - `removeFromHead` and `removeFromTail` remove a node from the beginning or end of the list, respectively. `removeFromHead` also returns the data of the removed node.
 - `isEmpty` checks whether the list is empty.
 - `print` prints the data of all nodes in the list from head to tail.
+- `search` searches for a node with the given data in the list. Returns true if such a node is found and false otherwise.
+- `retrieve`: Searches for a node with the specified data. If found, sets outputPtr to this node and returns true. If not found, returns false.
+- `remove`: Searches for a node with the specified data and removes it if found. Updates the head or tail pointer if necessary. Returns true if the node was successfully removed, false otherwise.
+
+
 
 This implementation provides understanding of the basics and working with linked lists. It can be extended to include more complex operations, such as sorting the list, reversing the list and more.
 
@@ -48,6 +53,12 @@ In terminal, (inside the directory containing cpp files)
       - Returns true if the list is empty and false otherwise. 
 - #### print(): <br>
       - Prints out the nodes in the list. 
+- #### search(int data):<br>
+      - Searches for a node with the given data in the list. Returns true if such a node is found and false otherwise. 
+- ### retrieve(int data, node** outputPtr):<br>
+      - Searches for a node with the given data in the list. If such a node is found, it sets outputPtr to point to this node and returns true. If the node is not found, it returns false. This function allows us to not only check if a node with the given data exists in the list, but also access the node directly through the outputPtr.
+- ### remove(int data):<br>
+      - Searches for a node with the given data in the list and removes it if found. If the node is in the head of the list, it updates the head pointer. If the node is in the tail of the list, it updates the tail pointer. If the node is in the middle of the list, it updates the next pointer of the previous node to point to the next node, effectively removing the current node from the list. The function returns true if the node was found and removed, and false otherwise. This function allows you to remove a node with a specific data value from the list.
 
 ##  Project Structure
 
