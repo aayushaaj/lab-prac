@@ -25,6 +25,9 @@ class linkedlist
         bool removeFromHead(int &data);
         bool removeFromTail(int &data);
 
+        bool retrieve(int data, node **outputPtr);
+        bool search(int data);
+        
         bool isEmpty();
 
         void print();
