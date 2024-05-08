@@ -58,7 +58,7 @@ void linkedlist::addToTail(int data)
 }
 
 // Add a new node after a specific node in the linked list
-void linkedlist::add(node *pred,int data)
+void linkedlist::add(int data,node *pred)
 {   
     // If the specified node is null or the list is empty, this adds the new node to the head
     if(pred== nullptr || isEmpty())
