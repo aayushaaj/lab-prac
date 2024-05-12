@@ -22,7 +22,8 @@ class linkedlist
         void addToTail(int data);
 
         bool remove(int data);
-        bool removeFromHead();
+        //bool removeFromHead();
+        int removeFromHead();
         bool removeFromTail();
 
         bool retrieve(int data, node **outputPtr);
