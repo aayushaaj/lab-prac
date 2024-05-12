@@ -15,8 +15,6 @@ int main()
         std::cout<<"Linked List: \n";
         list.print();
 
-        std::cout<<"Traversing Linked List: \n";
-        list.traverse();
 }
 
 
