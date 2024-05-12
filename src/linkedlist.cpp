@@ -75,7 +75,7 @@ void linkedlist::add(int data,node *pred)
 }
 
 // Removes the head of the linked list
-bool linkedlist::removeFromHead()
+int linkedlist::removeFromHead()
 {   
     
     node *NodeToDelete; // Creating a pointer to the node to delete
@@ -84,20 +84,21 @@ bool linkedlist::removeFromHead()
     {
         
         NodeToDelete=HEAD;                  // Sets the node to delete to the head       
+        return NodeToDelete->info;
         HEAD=NodeToDelete->next;            // Updates the head to the next node        
         delete NodeToDelete;                // Deletes the old head
-     // If the list is now empty, also updates the tail to null
+        // If the list is now empty, also updates the tail to null
         if(HEAD==nullptr)
         {
             TAIL=nullptr;
         }
         // Returns true indicating the node was successfully removed
-        return true;
+        
     }
     else
     {
         // If the list was empty, returns false
-        return false;
+        return -1;
     }
 }
 
@@ -201,13 +202,6 @@ bool linkedlist::search(int data) {
         p = p->next;
     }
     return p != nullptr;
-}
-
-void linkedlist::add(int data, node* predecessor) {
-    node* newNode = new node;
-    newNode->info = data;
-    newNode->next = predecessor->next;
-    predecessor->next = newNode;
 }
 
 void linkedlist::traverse() {
