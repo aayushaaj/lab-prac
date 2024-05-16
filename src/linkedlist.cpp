@@ -78,13 +78,13 @@ void linkedlist::add(int data, node *pred)
 bool linkedlist::removeFromHead()
 {   
     
-    node *NodeToDelete; // Creating a pointer to the node to delete
+    
     // If the list is not empty
     if(!isEmpty())
     {
-        
+        node *NodeToDelete; // Creating a pointer to the node to delete
         NodeToDelete=HEAD;                  // Sets the node to delete to the head       
-        HEAD=NodeToDelete->next;            // Updates the head to the next node        
+        HEAD=HEAD->next;            // Updates the head to the next node        
         delete NodeToDelete;                // Deletes the old head
      // If the list is now empty, also updates the tail to null
         if(HEAD==nullptr)
@@ -209,6 +209,14 @@ void linkedlist::traverse() {
         std::cout << p->info << std::endl;
         p = p->next;
     }
+}
+
+int linkedlist::getHead() {
+    if (isEmpty()) {
+        std::cout << "List is empty" << std::endl;
+        return -1;
+    }
+    return HEAD->info;
 }
 
 //Destructor for the linked list
