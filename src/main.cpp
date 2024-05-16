@@ -34,22 +34,7 @@ int main()
         // } 
         // else {
         //     std::cout << "List is not empty.\n";
-        // }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        
 
 //          // Adds some nodes to the head of the list
 //         list.addToHead(1);
