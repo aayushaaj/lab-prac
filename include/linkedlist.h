@@ -33,5 +33,7 @@ class linkedlist
 
         void print();
 
+        int getHead();
+
          ~linkedlist();
 };
